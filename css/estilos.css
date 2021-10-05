@@ -1,0 +1,63 @@
+html, body {
+  background-color: black;
+  color: white;
+}
+
+p {
+  font-size: 13px;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+.cor-estilo {
+  border: none;
+  color: #FC4C1E;
+  background-color: #FC4C1E;
+  height: 4px;
+}
+
+.logo-topo {
+  max-height: 110px;
+  min-width: 280px;
+}
+
+.logo-rede-social {
+  margin: 5px !important;
+}
+
+.container-logo {
+  padding: 28px;
+  height: 110px;
+}
+
+.container-slogan {
+  padding: 28px;
+  height: auto;
+}
+
+#pre-rodape {
+  background-image: url('../img/brasao-textura.png');
+  background-repeat: repeat;
+  background-blend-mode: saturation;
+  padding: 0 100px;
+  padding-top: 88px;
+  margin-top: -172px;
+  height: auto;
+}
+
+#enderecos {
+  margin-top: -46px;
+}
+
+#rodape {
+  background-color: #FC4C1E;
+}
+
+@media (max-width: 380px) {
+  .container-slogan {
+    padding: 2px;
+  }
+}
