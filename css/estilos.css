@@ -26,6 +26,7 @@ a:link {
 
 .logo-rede-social {
   margin: 5px !important;
+  width: 60px;
 }
 
 .container-logo {
@@ -39,9 +40,9 @@ a:link {
 }
 
 #pre-rodape {
-  background-image: url('../img/brasao-textura.png');
-  background-repeat: repeat;
-  background-blend-mode: saturation;
+  /* background-image: url('../img/brasao-textura.png'); */
+  /* background-repeat: repeat; */
+  /* background-blend-mode: saturation; */
   padding: 0 100px;
   padding-top: 88px;
   margin-top: -172px;
@@ -49,15 +50,15 @@ a:link {
 }
 
 #enderecos {
-  margin-top: -46px;
+  margin-top: -86px;
 }
 
 #rodape {
   background-color: #FC4C1E;
 }
 
-@media (max-width: 380px) {
-  .container-slogan {
-    padding: 2px;
+@media (min-width: 380px) {
+  #enderecos {
+    margin-top: -46px;
   }
 }
