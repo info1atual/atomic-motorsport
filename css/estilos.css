@@ -1,6 +1,14 @@
 html, body {
-  background-color: black;
   color: white;
+  background: url('../img/background.webp') center center / cover no-repeat fixed;
+  background-size: cover; 
+  height: 100vh; 
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
 }
 
 p {
@@ -19,11 +27,6 @@ a:link {
   height: 4px;
 }
 
-.logo-topo {
-  max-height: 110px;
-  min-width: 280px;
-}
-
 .logo-rede-social {
   margin: 5px !important;
   width: 60px;
@@ -31,7 +34,6 @@ a:link {
 
 .container-logo {
   padding: 28px;
-  height: 110px;
 }
 
 .container-slogan {
@@ -49,16 +51,24 @@ a:link {
   height: auto;
 }
 
-#enderecos {
-  margin-top: -86px;
-}
-
 #rodape {
   background-color: #FC4C1E;
 }
 
-@media (min-width: 380px) {
-  #enderecos {
-    margin-top: -46px;
+@media (max-width: 568px) {
+  body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url('../img/background.jpeg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 }
