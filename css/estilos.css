@@ -1,6 +1,7 @@
 html, body {
   color: white;
   background: url('../img/background.webp') center center / cover no-repeat fixed;
+  background-color: black;
   background-size: cover; 
   height: 100vh; 
   background-position: center;
@@ -33,6 +34,7 @@ a:link {
 }
 
 .container-logo {
+  background-color: black;
   padding: 28px;
 }
 
@@ -58,6 +60,7 @@ a:link {
 @media (max-width: 568px) {
   html, body {
     background: url('../img/background-recorte.webp') center center / cover no-repeat fixed;
+    background-color: black;
   }
   
   #pre-rodape {
