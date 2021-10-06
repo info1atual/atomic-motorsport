@@ -56,19 +56,12 @@ a:link {
 }
 
 @media (max-width: 568px) {
-  body:before {
-    content: "";
-    display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-    background: url('../img/background.jpeg') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  html, body {
+    background: url('../img/background-recorte.webp') center center / cover no-repeat fixed;
+  }
+  
+  #pre-rodape {
+    margin-top: -86px;
+    padding: 0 10px;
   }
 }
