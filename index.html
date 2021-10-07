@@ -28,10 +28,10 @@
   <main class="container">
     <br>
     <header id="header" class="header">
-      <div class="row justify-content-md-center">
+      <div class="row justify-content-sm-center">
         <div class="container-logo col col-sm-7 text-center">
-          <img class="img-fluid logo-topo" src="img/logo.webp" alt="">
-          <h5>Eficiencia ao alcance.</h5>
+          <img id="img_logo" class="img-fluid logo-topo" src="img/logo.webp" alt="">
+          <h5>Eficiência ao alcance.</h5>
         </div>
       </div>
     </header>
@@ -88,7 +88,7 @@
         <div class="col-12 col-md-4 pt-2 pb-2">
           <h3>O que nós fazemos?</h3>
           <div>
-            Atuamos no mercado de alta performance automotiva, atendendo as mais diversas <b>montadoras</b>. Reprogramação eletrônica, kits de potencia, escapamentos personalizados e muito mais você encontra aqui, na melhor empresa de performance do pais.
+            Atuamos no mercado de alta performance automotiva, atendendo as mais diversas <b>montadoras</b>. Reprogramação eletrônica, kits de potência, escapamentos personalizados e muito mais você encontra aqui, na melhor empresa de performance do país.
           </div>
         </div>
         <div class="col-12 col-md-1 text-center pt-2">
@@ -113,7 +113,7 @@
 
   <footer>
     <div class="container-fluid">
-      <div class="row justify-content-md-center">
+      <div class="row justify-content-sm-center">
         <div class="col col-sm-5 text-center">
           <img class="img-fluid" src="img/brasao-01.png" alt="Atomic">
         </div>
@@ -175,6 +175,12 @@
       var data = document.getElementById('data');
       var hoje = new Date();
       data.innerHTML = hoje.getFullYear();
+
+      const isMobile = window.orientation > -1;
+      if (isMobile) {
+        var img_logo = document.getElementById('img_logo');
+        img_logo.src = 'img/logo-cel.webp';
+      }
     };
   </script>
 </body>
